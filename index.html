@@ -5,35 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>РОСДОСБАНК - ИМПЕРИЯ ВАШИХ ФИНАНСОВ</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Orbitron:wght@700;900&display=swap'); /* Импортируем что-то побрутальнее */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Orbitron:wght@700;900&display=swap');
 
         body {
-            font-family: 'Roboto Condensed', sans-serif; /* Строгий, сжатый */
+            font-family: 'Roboto Condensed', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #0a0f14; /* Чернее чёрной дыры, почти */
-            color: #e0e0e0; /* Светло-серый, почти белый текст */
+            background-color: #0a0f14;
+            color: #e0e0e0;
             line-height: 1.7;
-            overflow-x: hidden; /* Чтоб никаких сюрпризов */
+            overflow-x: hidden;
         }
 
         .container {
             width: 90%;
-            max-width: 1300px; /* Шире, для ВЛАСТИ */
+            max-width: 1300px;
             margin: 0 auto;
             padding: 25px;
         }
 
-        /* ХЕДЕР - ВРАТА В ФИНАНСОВУЮ ЦИТАДЕЛЬ */
         header {
-            background: linear-gradient(135deg, #05080a 0%, #1a232e 100%); /* Градиент из темных тонов */
+            background: linear-gradient(135deg, #05080a 0%, #1a232e 100%);
             color: #ffffff;
             padding: 25px 0;
-            border-bottom: 7px solid #ffab00; /* ЯРКОЕ КИБЕР-ЗОЛОТО! НЕ ЖАЛЕТЬ! */
+            border-bottom: 7px solid #ffab00;
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 10px 30px rgba(255, 171, 0, 0.3); /* Золотое свечение! */
+            box-shadow: 0 10px 30px rgba(255, 171, 0, 0.3);
         }
 
         header .container {
@@ -47,26 +46,24 @@
             align-items: center;
         }
         
-        header .logo-icon { /* МЕСТО ПОД ЛОГО-ИКОНКУ (например, стилизованный орел или щит) */
-            width: 60px; /* Увеличим */
+        header .logo-icon {
+            width: 60px;
             height: 60px;
-            background-color: #ffab00; /* Золотой квадрат как заглушка для иконки */
+            background-color: #ffab00;
             margin-right: 20px;
-            /* Тут могла бы быть SVG иконка или сложный CSS шейп */
-            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); /* Гексагон типа для хайтека */
-
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
         }
 
         header h1 {
             margin: 0;
-            font-family: 'Orbitron', sans-serif; /* Космическо-технологичный шрифт */
-            font-size: 3em; /* МОЩНО! */
+            font-family: 'Orbitron', sans-serif;
+            font-size: 3em;
             font-weight: 900;
             letter-spacing: 2px;
-            text-shadow: 0 0 10px #ffab00, 0 0 20px #ffab00; /* СВЕЧЕНИЕ! */
+            text-shadow: 0 0 10px #ffab00, 0 0 20px #ffab00;
         }
         header h1 .dos {
-            color: #ffab00; /* Акцент на "ДОС" - ДОМИНИОН! */
+            color: #ffab00;
         }
 
         nav ul {
@@ -85,7 +82,7 @@
             text-decoration: none;
             font-weight: 700;
             font-size: 1.2em;
-            text-transform: uppercase; /* КАПСОМ ДЛЯ СЕРЬЕЗНОСТИ */
+            text-transform: uppercase;
             padding: 10px 15px;
             border: 2px solid transparent;
             transition: color 0.3s ease, border-color 0.3s ease, text-shadow 0.3s ease;
@@ -93,20 +90,17 @@
 
         nav ul li a:hover, nav ul li a.active {
             color: #ffab00;
-            border-color: #ffab00; /* Рамка при наведении */
+            border-color: #ffab00;
             text-shadow: 0 0 5px #ffab00;
         }
 
-        /* СЕКЦИЯ "ГЕРОЙ" - МОНУМЕНТАЛЬНОСТЬ! */
         .hero {
-            /* Используем сложный градиент для фона, как в лучших киберпанк-артах */
             background: radial-gradient(ellipse at bottom, #0d1218 40%, #151c25 100%);
             color: #ffffff;
-            padding: 120px 0; /* БОЛЬШЕ ПРОСТРАНСТВА! */
+            padding: 120px 0;
             text-align: center;
             position: relative;
         }
-        /* Эффект частиц на фоне (чисто CSS, без JS - иллюзия) */
         .hero::before {
             content: "";
             position: absolute;
@@ -116,65 +110,57 @@
                 radial-gradient(#ffab00 0.5px, #0d1218 0.5px);
             background-size: 30px 30px, 30px 30px;
             background-position: 0 0, 15px 15px;
-            opacity: 0.1; /* Едва заметные золотые точки */
+            opacity: 0.1;
             z-index: 0;
         }
-
-
         .hero .container {
             position: relative; z-index: 1;
         }
-
         .hero h2 {
             font-family: 'Orbitron', sans-serif;
-            font-size: 4.5em; /* ГИГАНТСКИЙ ЗАГОЛОВОК! */
+            font-size: 4.5em;
             margin-bottom: 25px;
             text-transform: uppercase;
             line-height: 1.2;
             text-shadow: 0 0 15px rgba(255, 171, 0, 0.7), 0 0 5px #fff;
         }
-
         .hero p {
-            font-size: 1.8em; /* Крупный подзаголовок */
+            font-size: 1.8em;
             margin-bottom: 40px;
-            color: #b0b0b0; /* Чуть приглушенный для контраста с заголовком */
+            color: #b0b0b0;
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;
         }
-
         .cta-button-dev {
             display: inline-block;
-            background: linear-gradient(145deg, #ffab00, #e68a00); /* Яркий золотой градиент */
-            color: #0a0f14; /* Тёмный текст на кнопке */
-            padding: 20px 45px; /* КНОПКА ДОЛЖНА БЫТЬ БОЛЬШОЙ! */
+            background: linear-gradient(145deg, #ffab00, #e68a00);
+            color: #0a0f14;
+            padding: 20px 45px;
             text-decoration: none;
             font-size: 1.4em;
             font-weight: 700;
             text-transform: uppercase;
-            border-radius: 5px; /* Острые углы, может быть */
-            border: 2px solid #c77a00; /* Тёмно-золотая рамка */
+            border-radius: 5px;
+            border: 2px solid #c77a00;
             box-shadow: 0 5px 15px rgba(255, 171, 0, 0.4), inset 0 -3px 5px rgba(0,0,0,0.2);
             transition: all 0.2s ease-in-out;
-            transform: perspective(1px) translateZ(0); /* Для эффектов при наведении */
+            transform: perspective(1px) translateZ(0);
         }
-
         .cta-button-dev:hover {
             background: linear-gradient(145deg, #e68a00, #ffab00);
             color: #000;
             box-shadow: 0 8px 25px rgba(255, 171, 0, 0.6), inset 0 -2px 3px rgba(0,0,0,0.3);
-            transform: scale(1.05); /* Легкое увеличение */
+            transform: scale(1.05);
         }
 
-        /* СЕКЦИИ КОНТЕНТА - ТЕХНОЛОГИЧНОСТЬ И СИЛА */
         .content-section-dev {
             padding: 80px 0;
             text-align: center;
         }
         .content-section-dev.alternate-dev {
-             background-color: #10151c; /* Чуть светлее чем основной фон, но все еще темно */
+             background-color: #10151c;
         }
-
         .content-section-dev h3 {
             font-family: 'Orbitron', sans-serif;
             font-size: 3em;
@@ -191,10 +177,10 @@
         }
         .feature-item-dev {
             flex-basis: calc(33.333% - 30px);
-            background: #1a232e; /* Темный фон для карточек */
+            background: #1a232e;
             padding: 35px;
-            border-radius: 8px; /* Немного скруглим, но не слишком */
-            border-left: 5px solid #ffab00; /* Золотая полоска слева */
+            border-radius: 8px;
+            border-left: 5px solid #ffab00;
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
             text-align: left;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -203,7 +189,6 @@
             transform: translateY(-10px);
             box-shadow: 0 15px 35px rgba(255, 171, 0, 0.3);
         }
-
         .feature-item-dev h4 {
             font-family: 'Orbitron', sans-serif;
             font-size: 1.8em;
@@ -213,13 +198,63 @@
         }
         .feature-item-dev p {
             font-size: 1.1em;
-            color: #c0c0c0; /* Светло-серый для описания */
+            color: #c0c0c0;
         }
 
-        /* ПОДВАЛ - ФУНДАМЕНТ ИМПЕРИИ */
+        /* СТИЛИ ДЛЯ СЕКЦИИ ПРОКАЧКИ - МОЩЬ! */
+        .promotion-block-dev {
+            background: linear-gradient(to right, #2c3e50, #fd746c, #ffc371); /* Сочный градиент! */
+            background: linear-gradient(135deg, #252D3A 0%, #1C2530 100%);
+            border: 3px solid #ffab00;
+            border-radius: 10px;
+            padding: 40px;
+            margin: 40px auto;
+            max-width: 800px; /* Чтобы не слишком широко */
+            box-shadow: 0 0 30px rgba(255, 171, 0, 0.5), inset 0 0 15px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+        .promotion-block-dev h4 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.8em; /* Крупнее! */
+            color: #ffffff; /* Белый на темном */
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px #ffab00;
+        }
+        .promotion-block-dev p {
+            font-size: 1.4em; /* Покрупнее текст */
+            color: #e0e0e0;
+            margin-bottom: 25px;
+        }
+        .promotion-block-dev .promo-code-dev {
+            font-family: 'Orbitron', sans-serif;
+            display: inline-block;
+            background-color: #0a0f14; /* Темный фон для кода */
+            color: #ffab00; /* Золотой код */
+            padding: 15px 30px;
+            font-size: 2em; /* ОГРОМНЫЙ КОД! */
+            font-weight: 900;
+            letter-spacing: 3px;
+            border: 2px dashed #ffab00; /* Пунктирная рамка */
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: copy; /* Типа намек на копирование */
+            box-shadow: 0 0 15px #ffab00;
+        }
+         .promotion-block-dev .promo-code-dev:hover {
+            color: #fff;
+            background-color: #ffab00;
+            border-color: #0a0f14;
+         }
+        .promotion-block-dev small {
+            display: block;
+            margin-top: 20px;
+            color: #aaa;
+            font-style: italic;
+        }
+
         footer {
-            background-color: #05080a; /* Самый темный */
-            color: #777; /* Приглушенный цвет для копирайта */
+            background-color: #05080a;
+            color: #777;
             text-align: center;
             padding: 40px 0;
             font-size: 1em;
@@ -245,14 +280,15 @@
     <header>
         <div class="container">
             <div class="logo-block">
-                <div class="logo-icon"></div> <!-- Заглушка для лого-иконки -->
+                <div class="logo-icon"></div>
                 <h1>РОС<span class="dos">ДОС</span>БАНК</h1>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#hero" class="active">ДОМИНИРОВАТЬ</a></li>
+                    <li><a href="#hero">ДОМИНИРОВАТЬ</a></li>
                     <li><a href="#services">АРСЕНАЛ</a></li>
                     <li><a href="#about">ЛЕГИОН</a></li>
+                    <li><a href="#promotions" class="active">ПРОКАЧКА</a></li> {/* <-- АКТИВНАЯ ПРОКАЧКА! */}
                     <li><a href="#contact">СИГНАЛ</a></li>
                 </ul>
             </nav>
@@ -262,7 +298,7 @@
     <section id="hero" class="hero">
         <div class="container">
             <h2>КУЙ СВОЮ ФИНАНСОВУЮ ИМПЕРИЮ ЗДЕСЬ!</h2>
-            <p>РОСДОСБАНК: Мы не просто храним деньги. Мы куём финансовую мощь. Установите Яндекс Браузер! sw43kqboeig5kre9.</p>
+            <p>РОСДОСБАНК: Мы не просто храним деньги. Мы куём финансовую мощь. Стань несокрушимым.</p>
             <a href="#services" class="cta-button-dev">Вступить в ряды избранных</a>
         </div>
     </section>
@@ -294,11 +330,26 @@
                 "РосДосБанк" — это не просто банк. Это ФИНАНСОВЫЙ ОРДЕН, выкованный из стали и передовых алгоритмов. Наша крепость — неприступна. Наши стратегии — безупречны. Доверьтесь силе. Доверьтесь РосДосБанку. Мы – архитекторы вашего финансового господства.
             </p>
              <a href="#" class="cta-button-dev" style="background: linear-gradient(145deg, #1e2a38, #10151c); color: #ffab00; border-color: #ffab00;">Узнать хроники побед</a>
-
         </div>
     </section>
 
-    <section id="contact" class="content-section-dev">
+    {/* НОВАЯ СЕКЦИЯ "ПРОКАЧКА" - ЗАЦЕНИ! */}
+    <section id="promotions" class="content-section-dev">
+        <div class="container">
+            <h3>ЭКСКЛЮЗИВНАЯ ПРОКАЧКА ОТ РОСДОСБАНКА!</h3>
+            <div class="promotion-block-dev">
+                <h4>Яндекс Браузер - Лучший браузер, для ВАЖНЫХ ЛЮДЕЙ. ТОЧКА.</h4>
+                <p>Хватит ползать по сети, как черепаха! Время УСКОРИТЬСЯ с ЯНДЕКС БРАУЗЕРОМ! РосДосБанк РЕКОМЕНДУЕТ – значит, это ТОП!</p>
+                <p>ВАШ ЗОЛОТОЙ КЛЮЧ К СКОРОСТИ:</p>
+                <div class="promo-code-dev" title="Кликни, чтобы якобы скопировать этот БОЖЕСТВЕННЫЙ код!">sw43kqboeig5kre9</div>
+                <small>P.S. Если твой комп не тянет эту МОЩЬ – это проблемы твоего компа, а не Яндекса. РосДосБанк за инновации!</small>
+            </div>
+            {/* МОЖНО ЕЩЕ БОЛЬШЕ ПРОКАЧЕК СЮДА ЗАПИЛИТЬ! */}
+        </div>
+    </section>
+
+
+    <section id="contact" class="content-section-dev alternate-dev">
          <div class="container">
             <h3>ПЕРЕДАТЬ СИГНАЛ В ЦИТАДЕЛЬ</h3>
             <p style="font-size: 1.3em; margin-bottom: 20px; color: #e0e0e0;">Наши специалисты на связи 25/8. Для тех, кто не теряет время.</p>
@@ -309,7 +360,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2077 РОСДОСБАНК. ФИНАНСОВАЯ СВЕРХДЕРЖАВА. ВСЕ ПРОТОКОЛЫ ЗАЩИЩЕНЫ НЕЙРОСЕТЬЮ.</p>
+            <p>© 2077 РОСДОСБАНК. ФИНАНСОВАЯ СВЕРХДЕРЖАВА. ВСЕ ПРОТОКОЛЫ ЗАЩИЩЕНЫ НЕЙРОСЕТЬЮ.</p>
             <p><a href="#">ДОКТРИНА КОНФИДЕНЦИАЛЬНОСТИ</a> | <a href="#">УСТАВ ИМПЕРИИ</a></p>
         </div>
     </footer>
